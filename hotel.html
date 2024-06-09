@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hotel Booking Registration Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Hotel Booking Registration</h1>
+
+    <form id="bookingForm">
+      <h2>Customer Info</h2>
+      <label for="customerName">Customer Name:</label>
+      <input type="text" id="customerName" required /><br />
+
+      <label for="checkInDate">Check-in Date:</label>
+      <input type="date" id="checkInDate" required /><br />
+
+      <label for="totalDays">Total No of Days:</label>
+      <input type="number" id="totalDays" required /><br />
+
+      <label for="totalPersons">Total No of Persons:</label>
+      <input type="number" id="totalPersons" required /><br />
+
+      <h2>Room Information</h2>
+      <label for="roomType">Room Type:</label>
+      <select id="roomType">
+        <option value="delux">Delux Room</option>
+        <option value="suite">Suite Room</option></select
+      ><br />
+
+      <label for="amenities">Amenities:</label>
+      <div class="form-group">
+        <div class="checkbox" id="amenities">
+          <img
+            class="AC"
+            src="data:image/jpeg;base64,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"
+            alt="AC"
+          />
+          <label
+            ><input type="checkbox" name="amenities" value="ac" /> AC</label
+          >
+        </div>
+        <div class="checkbox">
+          <img
+            class="locker"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxXO9hfvPDhPK7tWm-O-oQpxNa3-B_Z4d8NQ&s"
+            alt="lockers"
+          />
+          <label class="box">
+            <input type="checkbox" name="amenities" value="Locker" />
+            Locker</label
+          >
+        </div>
+      </div>
+      <br />
+
+      <h2>Advance Payment</h2>
+      <label for="advanceAmount">Advance Amount:</label>
+      <input type="number" id="advanceAmount" required /><br />
+
+      <h2>Total Cost Calculation</h2>
+      <label for="totalRoomCost">Total Room Cost:</label>
+      <input type="text" id="totalRoomCost" readonly /><br />
+
+      <label for="totalAmenitiesCost">Total Amenities Cost:</label>
+      <input type="text" id="totalAmenitiesCost" readonly /><br />
+
+      <label for="totalCost">Total Cost:</label>
+      <input type="text" id="totalCost" readonly /><br />
+
+      <h2>Additional Charges</h2>
+      <label for="extraPersons">Extra Persons:</label>
+      <input type="number" id="extraPersons" /><br />
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <script>
+      // Add your JavaScript code here
+      const bookingForm = document.getElementById("bookingForm");
+
+      bookingForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        // Get form values
+        const customerName = document.getElementById("customerName").value;
+        const checkInDate = document.getElementById("checkInDate").value;
+        const totalDays = parseInt(document.getElementById("totalDays").value);
+        const totalPersons = parseInt(
+          document.getElementById("totalPersons").value
+        );
+        const roomType = document.getElementById("roomType").value;
+        const amenities = document.getElementById("amenities").value;
+        const advanceAmount = parseInt(
+          document.getElementById("advanceAmount").value
+        );
+        const extraPersons =
+          parseInt(document.getElementById("extraPersons").value) || 0;
+
+        // Calculate costs
+        const roomRate = roomType === "delux" ? 2500 : 4000;
+        const amenitiesCost =
+          (amenities === "ac" ? 1000 : 0) + (amenities === "locker" ? 300 : 0);
+        const totalRoomCost = roomRate * totalDays;
+        const totalAmenitiesCost = amenitiesCost * totalDays;
+        const totalCost = totalRoomCost + totalAmenitiesCost;
+        const balance = totalCost - advanceAmount;
+
+        // Display results
+        document.getElementById("totalRoomCost").value = totalRoomCost + "/-";
+        document.getElementById("totalAmenitiesCost").value =
+          totalAmenitiesCost + "/-";
+        document.getElementById("totalCost").value = totalCost + "/-";
+
+        // Additional Charges
+        const extraPersonCost =
+          totalPersons > 2 ? extraPersons * 1000 * totalDays : 0;
+        console.log(
+          "Additional Charges for extra persons: " + extraPersonCost + "/-"
+        );
+      });
+    </script>
+  </body>
+</html>
